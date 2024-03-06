@@ -6,7 +6,10 @@ import Hello from './src/compornents/Hello'
 const App = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Hello />
+      <Hello bang>World</Hello>
+      <Hello bang style={{ fontSize: 16 }}>
+        World
+      </Hello>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
